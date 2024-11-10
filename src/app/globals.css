@@ -1,27 +1,182 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Reset styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Body Styling */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #ecf0f1; /* Light text color */
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url('public/assets/background.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  height: 100vh;
+  background-color: #34495e; /* Fallback color */
+  color: white; /* Default text color white */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Header Styling */
+.header-section {
+  text-align: center;
+  background-color: rgba(236, 240, 241, 0.8); /* Light background with transparency */
+  color: #2c3e50; /* Dark text for contrast */
+  padding: 50px 0;
+  border-radius: 8px;
+  margin: 60px 20px;
+  backdrop-filter: blur(10px); /* Slight blur effect */
+}
+
+.header-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.header-section p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Footer Styling */
+.footer-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+  color: #ecf0f1; /* Light text color */
+}
+
+.footer-section p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Section Styling */
+section {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for sections */
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Margin between sections */
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #ecf0f1; /* Light text for section headers */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #ecf0f1; /* White text for paragraphs */
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Button Styling */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Project Section Styling */
+.project-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-section h2 {
+  font-size: 2.5rem;
+  color: #ecf0f1; /* Light color for section headers */
+  margin-bottom: 40px;
+}
+
+.project-section .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-section .project-item {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-section .project-item h3 {
+  font-size: 1.6rem;
+  color: #2c3e50; /* Dark color for project item heading */
+  margin-bottom: 10px;
+}
+
+.project-section .project-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d; /* Light grey text for project description */
+  line-height: 1.5;
+}
+
+.project-section .project-item:hover {
+  transform: scale(1.05);
+  background-color: #ecf0f1;
+}
+
+.project-section .project-item .btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-section .project-item .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-section p {
+    font-size: 1rem;
+  }
+
+  .project-section .project-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project-section .project-item {
+    width: 100%;
   }
 }
