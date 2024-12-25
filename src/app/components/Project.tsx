@@ -8,37 +8,37 @@ const Projects: React.FC = () => {
         <div className="project-item">
           <h3>Project 1</h3>
           <p>
-           Resume Building <hr />
-           This is a simple frontend project built using HTML, CSS & typescript.
+           Multipage <hr />
+           This is a simple frontend project built using HTML, CSS & typescript, Next.js.
           </p>
-          <a href="#" className="btn">View Project</a>
+          <a href="https://multipage-pakwheel-9k5k.vercel.app/" className="btn">View Project</a>
         </div>
 
         <div className="project-item">
           <h3>Project 2</h3>
           <p>
           Editable Resume Building <hr />
-          This is a simple frontend project built using HTML, CSS, typescript , tailwind.css & Next.js.
+          This is a simple frontend project built using HTML, typescript , tailwind.css & Next.js.
           </p>
-          <a href="#" className="btn">View Project</a>
+          <a href="https://editable-resume-xi-ten.vercel.app/" className="btn">View Project</a>
         </div>
 
         <div className="project-item">
           <h3>Project 3</h3>
           <p>
-          E-Commerce Website <hr />
-          This is a multipage project built using HTML, CSS, typescript , tailwind.css & Next.js.
+          Portfolio <hr />
+          This is a colorful graphically frontend project built using HTML, typescript , tailwind.css & Next.js with projectlinks.
           </p>
-          <a href="#" className="btn">View Project</a>
+          <a href="https://my-portfolio-gncr.vercel.app/" className="btn">View Project</a>
         </div>
 
         <div className="project-item">
           <h3>Project 4</h3>
           <p>
-         Portfolio <hr />
-          This is a colorful graphically frontend project built using HTML, CSS, typescript , tailwind.css & Next.js.
+         UI/UX Hackathon <hr />
+          Responsive project built using HTML, typescript, tailwind.CSS,React.js, Next.js, ShadcnUI with figma template.
           </p>
-          <a href="#" className="btn">View Project</a>
+          <a href="https://hackathonq2-ecru.vercel.app/" className="btn">View Project</a>
         </div>
 
       </div>
